@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8fafc;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 shadow-sm px-4 py-2 rounded-lg font-medium transition;
+  }
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-lg font-medium transition;
+  }
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 px-4 py-2 rounded-lg font-medium transition;
+  }
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition;
+  }
+  .input:focus {
+    @apply ring-2 ring-blue-500 border-transparent;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  .badge {
+    @apply px-2 py-1 text-xs font-semibold rounded-full;
+  }
+}
